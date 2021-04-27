@@ -4,12 +4,7 @@
 \usepackage{epstopdf}
 \usepackage{hyperref}
 \usepackage{tikz}
-\usepackage{listings}
-\usepackage{subcaption}
 \usepackage[mode=build]{standalone}
-
-\usepackage{blindtext}
-\usepackage{comment}
 
 \tikzposterlatexaffectionproofoff
 
@@ -97,7 +92,7 @@
             \item Focus on protocol design and interaction.
             \item Evaluated with experimental analysis in IoT scenario (Raspberry Pis).
         \end{itemize}
-        \includestandalone[width=\linewidth]{diagrams/overlay_network_stack.tex}\\
+        \includestandalone[width=\linewidth]{diagrams/overlay_network_stack}\\
     }
     
     \column{0.33}
@@ -108,8 +103,8 @@
             \item Packets used for backwards learning.
             \item Bootstarts network by populating forwarding table.
         \end{itemize}
-        \includestandalone[width=\linewidth]{diagrams/discovery_protocol_topology.tex}\\
-        \includestandalone[width=\linewidth]{diagrams/discovery_protocol_sequence_diagram.tex}\\
+        \includestandalone[width=\linewidth]{diagrams/discovery_protocol_topology}\\
+        \includestandalone[width=\linewidth]{diagrams/discovery_protocol_sequence_diagram}\\
     }
     
     \column{0.33}
@@ -119,8 +114,8 @@
             \item MN discovery advertisement is for CN to learn where to forward packets to the new locator (\texttt{0:0:0:c}).
             \item Locator update informs all hosts in a unicast communication session with MN of new locator.
         \end{itemize}
-        \includestandalone[width=\linewidth]{diagrams/locator_update_topology.tex}\\
-        \includestandalone[width=\linewidth]{diagrams/locator_update_sequence_diagram.tex}\\
+        \includestandalone[width=\linewidth]{diagrams/locator_update_topology}\\
+        \includestandalone[width=\linewidth]{diagrams/locator_update_sequence_diagram}\\
     }
 \end{columns}
 
@@ -129,7 +124,7 @@
     \block{Experiment Setup}
     {
         \includegraphics[width=\linewidth]{testbed.jpg}\\
-        \includestandalone[width=\linewidth]{diagrams/experiment.tex}\\
+        \includestandalone[width=\linewidth]{diagrams/experiment}\\
     }
 
     \column{0.33}
